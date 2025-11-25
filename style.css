@@ -1,22 +1,60 @@
-body {
-    background-color:rgb(0, 0, 0);
-    color:aliceblue;
-    
-}
-#first {
-    color:rgb(249, 191, 137);
-    font-family:monospace;
-    font-size:larger;
-    text-align: center;
-    
-}
-#lasttwo {
-    color:rgb(243, 208, 137);
-    font-family:monospace;
-    font-size:larger;
-    text-align: center;
-}
-h5 {
-    color:rgb(245, 243, 148)
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+    background-color:rgb(68, 75, 96);
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family:Saira
+}
+
+#title span {
+    display: inline-block;
+    animation: intro 3s ease-in-out;
+  }
+
+#title span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+@keyframes intro {
+0% {
+    opacity: 0;
+    transform: translateY(20px)
+}
+100% {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+}
+
+img {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    height: 50%;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+button {
+    font-family:Saira;
+    background-color:rgb(255, 255, 255);
+    color:dimgray;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3 ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(230,230,230);
+    transform: scale(1.05);
+    cursor: pointer;
 }
